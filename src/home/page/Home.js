@@ -7,7 +7,7 @@ import Skills from "../components/sections/Skills";
 
 export const Home = () => {
   return (
-    <div>
+    <div id="home">
       <NavBar />
       <Intro />
       <Skills />

@@ -7,6 +7,9 @@
 
 # testing
 /coverage
+/src/assets
+/src/home/components/widgets
+
 
 # production
 /build

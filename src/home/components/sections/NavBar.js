@@ -40,42 +40,31 @@ const NavBar = () => {
                 href={process.env.REACT_APP_INSTAGRAM_LINK}
                 target="_blank"
               >
-                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i className="fa-brands fa-instagram fa-xl"></i>
               </a>
               <a
                 className="m-2"
                 href={process.env.REACT_APP_LINKEDIN_LINK}
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <i className="fa-brands fa-linkedin fa-xl"></i>
               </a>
               <a
                 className="m-2"
                 href={process.env.REACT_APP_GITHUB_LINK}
                 target="_blank"
               >
-                <i class="fa-brands fa-github fa-xl"></i>
+                <i className="fa-brands fa-github fa-xl"></i>
               </a>
               <a
                 className="m-2"
                 href={process.env.REACT_APP_STACK_OVERFLOW_LINK}
                 target="_blank"
               >
-                <i class="fa-brands fa-stack-overflow fa-xl"></i>
+                <i className="fa-brands fa-stack-overflow fa-xl"></i>
               </a>
             </div>
           </span>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
         </div>
       </nav>
     </div>

@@ -1,6 +1,10 @@
 *{
   font-family: 'Ubuntu', sans-serif;
+  color: #fff !important;
+
 }
-.app {
-  background: url("https://learnopencv.com/wp-content/uploads/2021/04/image-15.png") ;
+body{
+  background: url("https://source.unsplash.com/random/?gradient")no-repeat fixed;
+  background-size: cover;
+
 }
