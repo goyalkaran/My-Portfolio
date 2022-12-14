@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import snapchat from "../../../assets/images/Snapchat-1090329637.jpg";
-const Intro = () => {
+import myImage2 from "../../assets/images/myImage2.jpg"
+import resume from '../../assets/resume/Karan_Goyal_Resume_01-12-2022-17-30-30.pdf';
+const AboutMe = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -41,45 +42,27 @@ const Intro = () => {
     }
   };
   return (
-    <section>
+    <div className="container" id="about">
       <div className="row">
         <div className="col">
-          <span>Welcome to my portfolio</span>
+          <img className="img-fluid" src={myImage2} alt="My Image"/>
+        </div>
+        <div className="col">
+          <h2>About me</h2>
           <h1>
-            {`Hi, I am a `}
+            {`I am a `}
             <span className="wrap">{text}</span>
           </h1>
           <p>
-            Lorem Ipsum is simply dummy Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unch
           </p>
-          <button
-            className="btn btn-primary"
-            onClick={() => {
-              console.log("pressed connect");
-            }}
-          >
-            lets connect <i className="fa-solid fa-circle-arrow-right"></i>
-          </button>
-        </div>
-        <div className="col md-6 xl-5 ">
-          <img
-          height="500px"
-
-            src={snapchat}
-            alt="hello"
-          ></img>
+          <a download="" href={resume} className="btn btn-primary">Download Resume  <i class="fa-solid fa-file-arrow-down fa-xl"></i></a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Intro;
+export default AboutMe;

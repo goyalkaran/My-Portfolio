@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../../../assets/images/meter1.svg";
-import meter2 from "../../../assets/images/meter2.svg";
-import meter3 from "../../../assets/images/meter3.svg";
+import meter1 from "../../assets/images/meter1.svg";
+import meter2 from "../../assets/images/meter2.svg";
+import meter3 from "../../assets/images/meter3.svg";
 
 // "https://source.unsplash.com/random/?gradient/550x150"
 
