@@ -10,8 +10,8 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 100%);
   --text-color: hsl(var(--hue), var(--sat), 54%);
   --body-color: hsl(var(--hue), var(--sat), 5%);
-  --container-color: #fff;
-  --border-shadow:hsl(var(--hue),var(--sat),34%);
+  --container-color: hsl(var(--hue), var(--sat), 0%);
+  --box-shadow: hsl(var(--hue), var(--sat), 34%);
 
   /*========== Font and typography ==========*/
   --body-font: "Chivo Mono", monospace;
@@ -46,7 +46,16 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
+
+/* .dark-mode{
+  --title-color: hsl(var(--hue), var(--sat), 80%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 54%);
+  --body-color: hsl(var(--hue), var(--sat), 5%);
+} */
+
 /* Responsive typography */
+
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
@@ -58,20 +67,7 @@
     --smaller-font-size: 0.75rem;
   }
 }
-/*=============== ligth mode ===============*/
-.light-mode{
-    --title-color: hsl(var(--hue), var(--sat), 20%);
-    --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-    --text-color: hsl(var(--hue), var(--sat), 46%);
-    --body-color: hsl(var(--hue), var(--sat), 95%);
-}
 
-.dark-mode{
-  --title-color: hsl(var(--hue), var(--sat), 80%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
-  --text-color: hsl(var(--hue), var(--sat), 54%);
-  --body-color: hsl(var(--hue), var(--sat), 5%);
-}
 * {
   /* font-family: 'Ubuntu', sans-serif; */
   margin: 0;
@@ -85,49 +81,111 @@ html {
   scroll-behavior: smooth;
 }
 
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
 body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
 
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 0 2rem;
 }
 
+.section--title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section--subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section--title,
+.section--subtitle {
+  text-align: center;
+}
 
 /*=============== LAYOUT ===============*/
 
-
-.container{
+.container {
   /* width: 998px; */
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;
- }
+}
 
 .grid {
   display: grid;
   gap: 1.5rem;
 }
 
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button--icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
 /*=============== RESPONSIVE ===============*/
-@media screen and (max-width:996px) {
-  .container{
+@media screen and (max-width: 996px) {
+  .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
 }
 
 @media screen and (max-width: 350px) {
-  .container{
+  .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }

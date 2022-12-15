@@ -1,0 +1,17 @@
+.intro--content {
+  grid-template-columns: 125px repeat(2, 1fr);
+  padding-top: 4.5rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+.intro--image {
+  background: url(../../../assets/images/myImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-self: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 9px rgb(255, 255, 255/30%);
+  order: 1;
+}

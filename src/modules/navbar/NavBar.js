@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./style/NavBar.css";
+
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   return (
-    <div>
+    <div className="container">
       <header className="nav__header">
         <nav className="navbar__head container">
           <a href="#" className="nav__logo">
@@ -40,6 +41,24 @@ const NavBar = () => {
                   <i className="fa-solid fa-envelope nav__icon"></i> Contact
                 </a>
               </li>
+              <li className="nav__item ">
+                <a
+
+                  onClick={() => {
+                    setDarkMode(!darkMode);
+                  }}
+                  className="nav__link"
+                >
+                  <i
+                    className={
+                      darkMode
+                        ? "fa-regular fa-moon dark-mode dark-mode-icon"
+                        : "fa-solid fa-moon light-mode dark-mode-icon"
+                    }
+                  ></i>
+                  <span className="color-mode">Theme</span>
+                </a>
+              </li>
             </ul>
 
             <i
@@ -59,15 +78,6 @@ const NavBar = () => {
           </div>
         </nav>
       </header>
-      <span className="dark-mode-icon">
-
-      <i
-        onClick={() => {
-          setDarkMode(!darkMode);
-        }}
-        className={darkMode ? "fa-regular fa-moon dark-mode" : "fa-solid fa-moon light-mode"}
-        ></i>
-        </span>
     </div>
   );
 };
