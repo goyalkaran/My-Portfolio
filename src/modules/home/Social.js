@@ -2,7 +2,7 @@ import React from "react";
 
 const Social = () => {
   return (
-    <div className="intro-social">
+    <div className="intro--social">
       <a
         className="intro-social-icon"
         href={process.env.REACT_APP_INSTAGRAM_LINK}
@@ -24,13 +24,13 @@ const Social = () => {
       >
         <i className="fa-brands fa-github fa-xl"></i>
       </a>
-      <a
+      {/* <a
         className="intro-social-icon"
         href={process.env.REACT_APP_STACK_OVERFLOW_LINK}
         target="_blank"
       >
         <i className="fa-brands fa-stack-overflow fa-xl"></i>
-      </a>
+      </a> */}
     </div>
   );
 };

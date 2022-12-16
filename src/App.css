@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Open+Sans&family=Ubuntu&display=swap");
+
 :root {
   --header-height: 3rem;
 
@@ -14,7 +16,9 @@
   --box-shadow: hsl(var(--hue), var(--sat), 34%);
 
   /*========== Font and typography ==========*/
-  --body-font: "Chivo Mono", monospace;
+  /* --body-font: 'Chivo Mono', monospace; */
+  /* --body-font: "Open Sans", sans-serif; */
+  --body-font: 'Ubuntu', sans-serif;
 
   --large-font-size: 3.5rem;
   --h1-size: 2.25rem;
@@ -30,7 +34,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
+  /*========== Margins Bottom ==========*/
 
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
@@ -58,10 +62,10 @@
 
 @media screen and (max-width: 992px) {
   :root {
-    --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
+    --large-font-size: 2.75rem;
+    --h1-size: 1.5rem;
+    --h2-size: 1.25rem;
+    --h3-size: 1rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
@@ -142,7 +146,6 @@ img {
 /*=============== LAYOUT ===============*/
 
 .container {
-  /* width: 998px; */
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;

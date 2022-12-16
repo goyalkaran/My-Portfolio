@@ -1,18 +1,16 @@
-.light-mode{
+.light-mode {
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 95%);
-
 }
 
-.dark-mode{
+.dark-mode {
   --title-color: hsl(var(--hue), var(--sat), 80%);
   --title-color-dark: hsl(var(--hue), var(--sat), 100%);
   --text-color: hsl(var(--hue), var(--sat), 54%);
   --body-color: hsl(var(--hue), var(--sat), 5%);
 }
-
 
 .nav__header {
   width: 100%;
