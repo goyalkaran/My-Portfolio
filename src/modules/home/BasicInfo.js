@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import hand from "../../assets/images/wave-hand.svg";
+// import hand from "../../assets/images/wave-hand.svg";
 
 const BasicInfo = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -9,7 +9,7 @@ const BasicInfo = () => {
   const period = 2000;
   const roles = [
     "Software Developer",
-    "Full Stack Web Developer",
+    "MERN Stack Developer",
     "Mobile App Developer",
   ];
 
@@ -48,7 +48,7 @@ const BasicInfo = () => {
         {/* <i class="fa-regular fa-face-smile intro-title-icon"></i> */}
         {/* <img className="intro-title-hand" src={hand} alt="handWave" /> */}
       </h1>
-      <h3 className="intro--subtitle">{text}</h3>
+      <h3 className="intro--subtitle">{`I am a ${text}`}</h3>
       <p className="intro--description">
         A passionate coder, a very quick learner and a hardworking individual
         with an eagerness to learn new languages and technologies.

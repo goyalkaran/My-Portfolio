@@ -11,7 +11,7 @@ export const Home = () => {
     <div id="home">
       <NavBar />
       <Intro />
-      {/* <AboutMe/> */}
+      <AboutMe/>
       {/* <Skills /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
