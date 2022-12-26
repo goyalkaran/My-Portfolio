@@ -5,27 +5,25 @@ import resume from "../../assets/resume/Karan_Goyal_Resume_01-12-2022-17-30-30.p
 import AboutInfo from "./AboutInfo";
 const AboutMe = () => {
   return (
-    <div className="container" id="about">
-      <section className="section about">
-        <h2 className="section--title">About Me</h2>
-        <div className="section--subtitle">My Introduction</div>
-        <div className="about--container container grid">
-          <div className="about--image"></div>
-          <div className="about--info">
-            <AboutInfo />
-            <p className="about--description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
-              praesentium magni tempora repellendus, iure tempore a ex accusamus
-              libero perspiciatis nulla aliquam dolor ullam temporibus.
-            </p>
-            <a href={resume} download="" className="button button--flex">
-              Download Resume
-              <i className="fa-solid fa-file about-resume-file-icon"></i>
-            </a>
-          </div>
+    <section className="section about" id="about">
+      <h2 className="section--title">About Me</h2>
+      <div className="section--subtitle">My Introduction</div>
+      <div className="about--container container grid">
+        <div className="about--image"></div>
+        <div className="about--info">
+          <AboutInfo />
+          <p className="about--description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+            praesentium magni tempora repellendus, iure tempore a ex accusamus
+            libero perspiciatis nulla aliquam dolor ullam temporibus.
+          </p>
+          <a href={resume} download="" className="button button--flex">
+            Download Resume
+            <i className="fa-solid fa-file about-resume-icon"></i>
+          </a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

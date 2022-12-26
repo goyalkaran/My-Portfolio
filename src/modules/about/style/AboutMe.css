@@ -7,33 +7,89 @@
   height: 350px;
   border-radius: 1.5rem;
   justify-self: center;
-
 }
-.about--container{
-  grid-template-columns: repeat(2,1fr);
+.about--container {
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  column-gap:4rem;
+  column-gap: 4rem;
 }
-.about--data{
-  grid-template-columns: repeat(2,145px);
+.about--data {
+  grid-template-columns: repeat(2, 170px);
   gap: 1rem;
   margin-bottom: var(--mb-1-5);
 }
-.about--box{
+.about--box {
   background-color: var(--container-color);
-  border: 3px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
-  padding: 1rem 1.75rem;
+  padding: 0.75rem 1rem;
   text-align: center;
 }
-.about--title{
+.about--icon {
+  font-size: 1rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-25);
+}
+.about--title {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
-.about--subtitle{
+.about--subtitle {
   font-size: var(--tiny-font-size);
 }
-.about--description{
-  padding: 0 0 0 0;
+.about--description {
+  padding: 0 2rem 0 0;
   margin-bottom: var(--mb-1-5);
+}
+.about-resume-icon {
+  margin-left: 0.35rem;
+}
+
+/*=============== RESPONSIVE ===============*/
+
+@media screen and (max-width: 996px) {
+  .about--container {
+    grid-template-columns: 1fr;
+    column-gap: 2.1rem;
+  }
+  .about--image {
+    width: 250px;
+    height: 250px;
+  }
+  .about--info {
+    text-align: center;
+  }
+  .about--data {
+    margin-bottom: var(--mb-1);
+    justify-content: center;
+  }
+  .about--box {
+    padding: 0.5rem 0.75rem;
+  }
+  .about--description {
+    padding: 0 3rem;
+    margin-bottom: var(--mb-1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .about--data {
+    margin-bottom: var(--mb-0-5);
+  }
+  .about--description {
+    padding: 0 2.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about--data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about--image {
+    width: 200px;
+    height: 200px;
+  }
+  .about--description {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 350px) {
 }

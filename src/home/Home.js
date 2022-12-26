@@ -12,7 +12,7 @@ export const Home = () => {
       <NavBar />
       <Intro />
       <AboutMe/>
-      {/* <Skills /> */}
+      <Skills />
       {/* <Projects /> */}
       {/* <Contact /> */}
     </div>
