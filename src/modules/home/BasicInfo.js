@@ -53,7 +53,7 @@ const BasicInfo = () => {
         A passionate coder, a very quick learner and a hardworking individual
         with an eagerness to learn new languages and technologies.
       </p>
-      <a className="button button--flex" href="#contact">
+      <a className="info-contact-button button button--flex" href="#contact">
         Say Hello
         <i className="fa-solid fa-paper-plane intro-contact-icon"></i>
       </a>

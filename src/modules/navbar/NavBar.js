@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./style/NavBar.css";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light-mode");
+  const toggleTheme = () => {
+    if (theme === "light-mode") {
+      setTheme("dark-mode");
+      setDarkMode(true);
+    } else {
+      setTheme("light-mode");
+      setDarkMode(false);
+    }
+  };
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.body.className = theme;
+  }, [theme]);
   return (
     <div className="container">
       <header className="nav__header">
@@ -43,17 +57,16 @@ const NavBar = () => {
               </li>
               <li className="nav__item ">
                 <a
-
                   onClick={() => {
-                    setDarkMode(!darkMode);
+                    toggleTheme();
                   }}
                   className="nav__link"
                 >
                   <i
                     className={
                       darkMode
-                        ? "fa-regular fa-moon dark-mode dark-mode-icon"
-                        : "fa-solid fa-moon light-mode dark-mode-icon"
+                        ? "fa-regular fa-moon dark-mode-icon dark-mode"
+                        : "fa-solid fa-moon dark-mode-icon light-mode"
                     }
                   ></i>
                   <span className="color-mode">Theme</span>

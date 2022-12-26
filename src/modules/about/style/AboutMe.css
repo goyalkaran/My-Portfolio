@@ -1,0 +1,39 @@
+.about--image {
+  background: url(../../../assets/images/myImage2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
+
+}
+.about--container{
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  column-gap:4rem;
+}
+.about--data{
+  grid-template-columns: repeat(2,145px);
+  gap: 1rem;
+  margin-bottom: var(--mb-1-5);
+}
+.about--box{
+  background-color: var(--container-color);
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.75rem;
+  padding: 1rem 1.75rem;
+  text-align: center;
+}
+.about--title{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+.about--subtitle{
+  font-size: var(--tiny-font-size);
+}
+.about--description{
+  padding: 0 0 0 0;
+  margin-bottom: var(--mb-1-5);
+}
