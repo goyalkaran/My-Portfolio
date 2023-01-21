@@ -2,12 +2,11 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="container">
-      <div id="projects">
-        <h2>My Projects</h2>
-        <p> It was popularized in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-    </section>
+    <section className="section Projects" id="Projects">
+    <h2 className="section--title">Projects</h2>
+    <div className="section--subtitle">My Projects</div>
+    <div className="Projects--container container grid"></div>
+  </section>
   );
 };
 

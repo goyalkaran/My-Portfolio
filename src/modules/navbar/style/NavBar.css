@@ -3,8 +3,9 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 95%);
+  --border-col: hsl(var(--hue), var(--sat), 70%);
   --container-color: #fff;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .dark-mode {
@@ -12,8 +13,9 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 100%);
   --text-color: hsl(var(--hue), var(--sat), 54%);
   --body-color: hsl(var(--hue), var(--sat), 5%);
+  --border-col: hsl(var(--hue), var(--sat), 30%);
   --container-color: #000;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .nav__header {
@@ -21,7 +23,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: --z-fixed;
+  z-index: var(--z-fixed);
   background-color: var(--body-color);
   /* background-color: #fff; */
 }
@@ -41,6 +43,9 @@
 .dark-mode-icon {
   padding-bottom: 0.5rem;
   display: block;
+}
+.dark-mode-icon {
+  cursor: pointer;
 }
 .nav__link {
   display: flex;
@@ -67,6 +72,9 @@
   display: none !important;
 }
 
+.scroll--header {
+  box-shadow: 0 -1px 4px var(--border-col);
+}
 /*=============== RESPONSIVE ===============*/
 @media screen and (max-width: 768px) {
   .nav__header {
