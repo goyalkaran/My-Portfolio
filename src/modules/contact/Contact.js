@@ -51,11 +51,12 @@ const Contact = () => {
             <div className="contact--card">
               <i className="fa-brands fa-whatsapp contact--card-icon"></i>{" "}
               <h3 className="contact--card-title">WhatsApp</h3>
-              <span className="contact--card-data">{""}</span>
+              <span className="contact--card-data">7078678954</span>
               <a
                 href="//api.whatsapp.com/send?phone=917078678954&text=Hello, More Information!"
                 className="contact--button"
                 target="_blank"
+                rel="noreferrer"
               >
                 Write Me{" "}
                 <i className="fa-sharp fa-solid fa-arrow-right contact--button-icon"></i>

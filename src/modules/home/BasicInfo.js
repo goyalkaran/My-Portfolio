@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 
 // import hand from "../../assets/images/wave-hand.svg";
 
 const BasicInfo = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [letterSpeed, setLetterSpeed] = useState(250 - Math.random * 100);
   const period = 500;
   const roles = [
     "Software Developer",
@@ -15,34 +11,6 @@ const BasicInfo = () => {
     "Mobile App Developer",
   ];
 
-  // useEffect(() => {
-  //   const ticker = setInterval(() => {
-  //     tick();
-  //   }, letterSpeed);
-  //   return () => {
-  //     clearInterval(ticker);
-  //   };
-  // }, [text]);
-
-  // const tick = () => {
-  //   let i = loopNum % roles.length;
-  //   let fullText = roles[i];
-  //   let updatedText = isDeleting
-  //     ? fullText.substring(0, text.length - 1)
-  //     : fullText.substring(0, text.length + 1);
-  //   setText(updatedText);
-  //   if (isDeleting) {
-  //     setIsDeleting((pervLetterSpeed) => pervLetterSpeed / 2);
-  //   }
-  //   if (!isDeleting && updatedText === fullText) {
-  //     setIsDeleting(true);
-  //     setLetterSpeed(period);
-  //   } else if (isDeleting && updatedText === "") {
-  //     setIsDeleting(false);
-  //     setLoopNum(loopNum + 1);
-  //     setLetterSpeed(500);
-  //   }
-  // };
   return (
     <div className="intro--info">
       <h1 className="intro--title">

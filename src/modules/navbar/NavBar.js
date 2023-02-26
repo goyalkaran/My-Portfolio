@@ -33,7 +33,7 @@ const NavBar = () => {
   return (
     <header className="nav__header">
       <nav className="navbar__head container">
-        <a href="#" className="nav__logo">
+        <a href="#home" className="nav__logo">
           Karan Goyal
         </a>
 
@@ -85,12 +85,12 @@ const NavBar = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#projects"
+                href="#portfolio"
                 onClick={() => {
-                  setActiveTab("#projects");
+                  setActiveTab("#portfolio");
                 }}
                 className={
-                  activeTab === "#projects"
+                  activeTab === "#portfolio"
                     ? "nav__link active__link"
                     : "nav__link"
                 }

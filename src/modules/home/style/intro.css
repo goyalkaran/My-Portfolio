@@ -21,11 +21,14 @@
   margin-left: 0.25rem;
 } */
 
-.intro--subtitle {
+.Typewriter__wrapper {
   font-size: var(--h3-size);
   padding-left: 1.5rem;
-
   font-weight: var(--font-normal);
+  /* margin-bottom: var(--mb-1); */
+}
+
+.intro--subtitle {
   margin-bottom: var(--mb-1);
 }
 .intro--description {
@@ -146,6 +149,9 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .intro--image {
+    justify-self: center;
+  }
 }
 @media screen and (max-width: 350px) {
   .intro--content {
