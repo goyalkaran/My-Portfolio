@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 const BasicInfo = () => {
-  const period = 500;
+  const period = 200;
   const roles = [
     "Software Developer",
     "MERN Stack Developer",
@@ -20,7 +20,7 @@ const BasicInfo = () => {
         <Typewriter
           options={{
             strings: roles,
-            delay: 250,
+            delay: 100,
             cursor: "|",
             autoStart: true,
             loop: true,

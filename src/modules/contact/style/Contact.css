@@ -28,6 +28,15 @@
   color: var(--title-color);
   margin-bottom: var(--mb-0-25);
 }
+.whatsapp{
+  color: rgb(37, 211, 102);
+}
+.envelope{
+  color: rgb(234, 67, 53);
+}
+.phone{
+  color: rgb(36, 189, 16);
+}
 .contact--card-data,
 .contact--card-title {
   font-size: var(--small-font-size);

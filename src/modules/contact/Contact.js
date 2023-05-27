@@ -44,7 +44,7 @@ const Contact = () => {
           <h3 className="content--title">Talk to me</h3>
           <div className="contact--info">
             <div className="contact--card">
-              <i className="fa-regular fa-envelope  contact--card-icon"></i>
+              <i className="fa-regular fa-envelope  contact--card-icon envelope"></i>
               <h3 className="contact--card-title">Email</h3>
               <span className="contact--card-data">
                 goyalkaran2001@gmail.com
@@ -58,8 +58,8 @@ const Contact = () => {
                 <i className="fa-sharp fa-solid fa-arrow-right contact--button-icon"></i>
               </a>
             </div>
-            <div className="contact--card">
-              <i className="fa-brands fa-whatsapp contact--card-icon"></i>{" "}
+            <div className="contact--card"> 
+              <i className="fa-brands fa-whatsapp contact--card-icon whatsapp"></i>{" "}
               <h3 className="contact--card-title">WhatsApp</h3>
               <span className="contact--card-data">7078678954</span>
               <a
@@ -73,7 +73,7 @@ const Contact = () => {
               </a>
             </div>
             <div className="contact--card">
-              <i className="fa-solid fa-phone contact--card-icon"></i>
+              <i className="fa-solid fa-phone contact--card-icon phone"></i>
               <h3 className="contact--card-title">Call Me</h3>
               <span className="contact--card-data">7078678954</span>
               <a href="tel:7078678954" className="contact--button">
