@@ -25,6 +25,9 @@
 
 .project--img {
   width: 295px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
 }

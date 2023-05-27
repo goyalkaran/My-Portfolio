@@ -45,6 +45,7 @@
 .skills-level {
   font-size: var(--tiny-font-size);
 }
+
 /*=============== RESPONSIVE ===============*/
 @media screen and (max-width: 996px) {
   .skills--container {

@@ -1,6 +1,6 @@
 /* Home  */
 .intro--container {
-  row-gap: 4rem;
+  row-gap: 7rem;
 }
 .intro--content {
   grid-template-columns: 118px repeat(2, 1fr);
@@ -11,8 +11,9 @@
 /* Home Basic Info */
 
 .intro--title {
+  justify-content: center;
   font-size: var(--large-font-size);
-  margin-bottom: var(--mb-0-5);
+  margin-bottom: var(--mb-1-5);
 }
 
 /* .intro-title-hand {
@@ -29,7 +30,7 @@
 }
 
 .intro--subtitle {
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-1-5);
 }
 .intro--description {
   max-width: 400px;

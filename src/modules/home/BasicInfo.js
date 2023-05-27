@@ -1,8 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-// import hand from "../../assets/images/wave-hand.svg";
-
 const BasicInfo = () => {
   const period = 500;
   const roles = [
@@ -36,10 +34,10 @@ const BasicInfo = () => {
           }}
         />
       </h3>
-      <p className="intro--description">
+      {/* <p className="intro--description">
         A passionate coder, a very quick learner and a hardworking individual
         with an eagerness to learn new languages and technologies.
-      </p>
+      </p> */}
       <a className="info-contact-button button button--flex" href="#contact">
         Say Hello
         <i className="fa-solid fa-paper-plane intro-contact-icon"></i>

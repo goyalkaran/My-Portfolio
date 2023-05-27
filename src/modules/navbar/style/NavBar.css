@@ -6,6 +6,7 @@
   --border-col: hsl(var(--hue), var(--sat), 70%);
   --container-color: #fff;
   transition: 0.3s;
+  /* background-image: url("../../../assets/images/bg.jpg"); */
 }
 
 .dark-mode {
@@ -16,6 +17,7 @@
   --border-col: hsl(var(--hue), var(--sat), 30%);
   --container-color: #000;
   transition: 0.3s;
+  /* background-image: url("../../../assets/images/bg_b.jpg"); */
 }
 
 .nav__header {

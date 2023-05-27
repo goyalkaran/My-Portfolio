@@ -8,6 +8,16 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Check if all the form fields are filled
+    const name = form.current.name.value;
+    const email = form.current.email.value;
+    if (!name || !email ) {
+      alert("Please fill the required fields");
+      return;
+    }else{
+      alert("Your response is submitted");
+    }
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -75,12 +85,12 @@ const Contact = () => {
         </div>
         <div className="contact--content">
           <h3 className="content--title content--title-project">
-            Write me your projects
+            Hire me
           </h3>
           <form ref={form} onSubmit={sendEmail} className="contact--form">
             <div className="contact--form-div">
               <label htmlFor="" className="contact--form-tag">
-                Name
+                Name*
               </label>
               <input
                 type="text"
@@ -91,7 +101,7 @@ const Contact = () => {
             </div>
             <div className="contact--form-div">
               <label htmlFor="" className="contact--form-tag">
-                Mail
+                Mail*
               </label>
               <input
                 type="email"
@@ -102,7 +112,7 @@ const Contact = () => {
             </div>
             <div className="contact--form-div contact--form-area ">
               <label htmlFor="" className="contact--form-tag">
-                Project
+                Description
               </label>
               <textarea
                 name="project"
