@@ -22,6 +22,10 @@
   gap: 3rem;
   justify-content: center;
 }
+.project--description{
+  width: 295px;
+  margin-bottom: var(--mb-0-5);
+}
 
 .project--img {
   width: 295px;
@@ -91,8 +95,9 @@
 @media screen and (max-width: 576px) {
   .project--container {
     grid-template-columns: 1fr;
+    /* width: 350px; */
   }
-  .project--img {
+  .project--img ,.project--description{
     width: 100%;
   }
 }

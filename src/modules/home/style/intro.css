@@ -1,6 +1,6 @@
 /* Home  */
 .intro--container {
-  row-gap: 7rem;
+  row-gap: 7.25rem;
 }
 .intro--content {
   grid-template-columns: 118px repeat(2, 1fr);
@@ -13,20 +13,20 @@
 .intro--title {
   justify-content: center;
   font-size: var(--large-font-size);
-  margin-bottom: var(--mb-1-5);
+  margin-bottom: var(--mb-0-5);
 }
 
-/* .intro-title-hand {
-  width: 36px;
-  height: 36px;
-  margin-left: 0.25rem;
-} */
+.intro-title-hand {
+  color: #ffd43b;
+  margin-left: 0.5rem;
+  margin-bottom: var(--mb-0-5);
+}
 
 .Typewriter__wrapper {
   font-size: var(--h3-size);
   padding-left: 1.5rem;
   font-weight: var(--font-normal);
-  /* margin-bottom: var(--mb-1); */
+  margin-bottom: var(--mb-1);
 }
 
 .intro--subtitle {
@@ -94,6 +94,27 @@
   font-size: 1.25rem;
   color: var(--title-color);
 }
+
+.wave {
+  align-items: center;
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 /*=============== RESPONSIVE ===============*/
 @media screen and (max-width: 996px) {
   /* .intro--container {
@@ -129,9 +150,12 @@
     grid-template-columns: 0.25fr 3fr;
     padding-top: 0.2rem;
   }
+  .intro--info{
+    text-align: center;
+  }
   .intro--image {
     order: initial;
-    justify-self: initial;
+    justify-self: center;
     width: 250px;
     height: 250px;
     box-shadow: inset 0 0 0 6px rgba(0, 0, 0, 0.35);
@@ -150,11 +174,10 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .intro--image {
-    justify-self: center;
-  }
+
 }
 @media screen and (max-width: 350px) {
+
   .intro--content {
     padding-top: 0.1rem;
   }

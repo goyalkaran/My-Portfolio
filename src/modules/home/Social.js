@@ -24,6 +24,13 @@ const Social = () => {
       >
         <i className="fa-brands fa-github fa-xl"></i>
       </a>
+      <a
+        className="intro-social-icon"
+        href={process.env.REACT_APP_MEDIUM_LINK}
+        target="_blank"
+      >
+        <i className="fa-brands fa-medium fa-xl"></i>
+      </a>
     </div>
   );
 };

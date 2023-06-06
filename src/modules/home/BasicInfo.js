@@ -6,15 +6,15 @@ const BasicInfo = () => {
   const roles = [
     "Software Developer",
     "MERN Stack Developer",
-    "Mobile App Developer",
+    "Flutter Developer",
+    "React Developer"
   ];
 
   return (
     <div className="intro--info">
       <h1 className="intro--title">
         Karan Goyal
-        {/* <i class="fa-regular fa-face-smile intro-title-icon"></i> */}
-        {/* <img className="intro-title-hand" src={hand} alt="handWave" /> */}
+        <span class="wave"><i class="fa-solid fa-hand intro-title-hand fa-2xl"></i></span>
       </h1>
       <h3 className="intro--subtitle">
         <Typewriter
@@ -27,7 +27,6 @@ const BasicInfo = () => {
           }}
           onInit={(typewriter) => {
             typewriter
-              // .typeString(roles[loopNum % roles.length])
               .pauseFor(period)
               .deleteAll()
               .start();
