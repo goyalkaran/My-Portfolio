@@ -6,7 +6,7 @@ const AboutInfo = () => {
       <div className="about--box">
         <i className="fa-solid fa-briefcase about--icon"></i>
         <h3 className="about--title">Experience</h3>
-        <span className="about--subtitle">Fresher</span>
+        <span className="about--subtitle">1 Year</span>
       </div>
       <div className="about--box">
         <i className="fa-solid fa-headset about--icon"></i>

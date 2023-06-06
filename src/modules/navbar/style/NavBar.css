@@ -5,8 +5,8 @@
   --body-color: hsl(var(--hue), var(--sat), 95%);
   --border-col: hsl(var(--hue), var(--sat), 70%);
   --container-color: #fff;
+  background-image: url("../../../assets/images/BG-Tx-1.svg");
   transition: 0.3s;
-  /* background-image: url("../../../assets/images/bg.jpg"); */
 }
 
 .dark-mode {
@@ -16,17 +16,17 @@
   --body-color: hsl(var(--hue), var(--sat), 5%);
   --border-col: hsl(var(--hue), var(--sat), 30%);
   --container-color: #000;
+  background-image: url("https://kawsar.design/wp-content/uploads/2023/02/BG-Tx-1.svg");
   transition: 0.3s;
-  /* background-image: url("../../../assets/images/bg_b.jpg"); */
 }
 
 .nav__header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   /* background-color: #fff; */
 }
 .navbar__head {
@@ -43,11 +43,15 @@
 }
 .nav__icon,
 .dark-mode-icon {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   display: block;
 }
 .dark-mode-icon {
+  margin-top: 0.1rem;
   cursor: pointer;
+}
+.fa-sun{
+  color: #FFE87C;
 }
 .nav__link {
   display: flex;
@@ -80,8 +84,10 @@
 /*=============== RESPONSIVE ===============*/
 @media screen and (max-width: 768px) {
   .nav__header {
+    position: fixed;
     top: initial;
     bottom: 0;
+    background-color: var(--body-color);
   }
   .navbar__head {
     height: var(--header-height);

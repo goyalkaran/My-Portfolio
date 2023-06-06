@@ -15,7 +15,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "light-mode"
+    localStorage.getItem("theme") || "dark-mode"
   );
   const toggleTheme = () => {
     if (theme === "light-mode") {
@@ -95,7 +95,7 @@ const NavBar = () => {
                     : "nav__link"
                 }
               >
-                <i className="fa-solid fa-folder-closed nav__icon"></i> Projects
+                <i className="fa-solid fa-folder-closed nav__icon"></i> Work
               </a>
             </li>
             <li className="nav__item">
@@ -123,7 +123,7 @@ const NavBar = () => {
                 <i
                   className={
                     darkMode
-                      ? "fa-regular fa-moon dark-mode-icon dark-mode"
+                      ? "fa-regular fa-sun dark-mode-icon dark-mode"
                       : "fa-solid fa-moon dark-mode-icon light-mode"
                   }
                 ></i>

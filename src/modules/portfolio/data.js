@@ -6,7 +6,8 @@ export const projectData = [
     image: AssetPath.ImagePath.portfolio,
     title: "Portfolio Website",
     category: "website",
-    description: "Developed an online IDE web application using ReactJS, Firebase, ExpressJS, MongoDB, and NodeJS, enabling users to login, solve questions using a Java code editor and compiler.", link: "https://github.com/goyalkaran/My-Portfolio",
+    description: "An impressive personal portfolio website showcasing my work and skills, meticulously developed and designed using ReactJS, JavaScript, HTML, and CSS. Hosted on Netlify for seamless deployment and accessibility.", 
+    link: "https://github.com/goyalkaran/My-Portfolio",
   },
   {
     id: 2,
@@ -14,7 +15,7 @@ export const projectData = [
     title: "Saviour Game Website",
     category: "website",
     description:
-      "Immerse yourself in the captivating world of Saviour Game, a browser-based gaming experience meticulously designed and developed using vanilla JavaScript. Engage in thrilling challenges and embark on epic adventures within this skillfully crafted game.",
+      "Immerse yourself in the captivating world of Saviour Game, a browser-based gaming experience meticulously designed and developed using vanilla JavaScript.",
     link: "https://github.com/goyalkaran/Saviour-game",
   },
   {
@@ -22,7 +23,7 @@ export const projectData = [
     image: AssetPath.ImagePath.ide,
     title: "Online IDE Website",
     category: "website",
-    description: "An innovative online IDE web application built with ReactJS, Firebase, ExpressJS, MongoDB, and NodeJS. Offering users the convenience of logging in, solving questions, and testing Java code in a dedicated code editor and compiler environment.",
+    description: "Developed an online IDE web application using ReactJS, Firebase, ExpressJS, MongoDB, and NodeJS, enabling users to login, solve questions using a Java code editor and compiler.",
     link: "https://github.com/goyalkaran/Online-IDE",
   },
   {
@@ -46,11 +47,11 @@ export const projectData = [
     image: AssetPath.ImagePath.notes,
     title: "Smart Notes",
     category: "app",
-    description:"Developed a Smart Notes application that allows users to create, read, update, and delete (CRUD) smart contracts on a decentralized network using Ethereum.",
+    description: "Developed a Smart Notes application that allows users to create, read, update, and delete (CRUD) smart contracts on a decentralized network using Ethereum.",
     link: "https://github.com/goyalkaran/Smart-Notes",
   },
   {
-    id: 6,
+    id: 7,
     image: AssetPath.ImagePath.iot,
     title: "Arduino Led cube",
     category: "",

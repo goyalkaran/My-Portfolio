@@ -38,7 +38,11 @@
   margin-bottom: var(--mb-1-5);
 }
 .about-resume-icon {
-  margin-left: 0.35rem;
+  margin-left: 0.45rem;
+}
+.button--resume{
+  font-size: var(--h3-size);
+    font-weight: 500;
 }
 
 /*=============== RESPONSIVE ===============*/

@@ -2,12 +2,35 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 const BasicInfo = () => {
-  const period = 200;
+  const period = 50;
   const roles = [
-    "Software Developer",
-    "MERN Stack Developer",
-    "Flutter Developer",
-    "React Developer"
+    {
+      title: 'Software Developer',
+      icon: <i class="fa-solid fa-laptop-code"></i>,
+    },
+    {
+      title: 'Flutter Developer',
+      icon:
+        <i class="devicon-flutter-plain colored"></i>
+      ,
+    },
+    {
+      title: 'MERN Stack Developer',
+      icon:
+        <i class="devicon-react-original colored"></i>
+      ,
+    },
+    {
+      title: 'React Developer',
+      icon: <i class="devicon-react-original colored"></i>,
+    },
+
+    {
+      title: 'Java Developer',
+      icon:
+        <i class="devicon-java-plain colored"></i>
+      ,
+    },
   ];
 
   return (
@@ -19,8 +42,8 @@ const BasicInfo = () => {
       <h3 className="intro--subtitle">
         <Typewriter
           options={{
-            strings: roles,
-            delay: 100,
+            strings: roles.map((role) => role.title),
+            delay: 50,
             cursor: "|",
             autoStart: true,
             loop: true,

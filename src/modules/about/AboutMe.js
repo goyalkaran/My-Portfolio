@@ -30,8 +30,8 @@ const AboutMe = () => {
             my dedication and expertise, I am confident that I can
             contribute to the success of any project or team.
           </p>
-          <a href={AssetPath.Documents.myResume} download="" className="button button--flex">
-            Download Resume
+          <a href={AssetPath.Documents.myResume} download="" className="button button--flex button--resume">
+            Resume
             <i className="fa-solid fa-file about-resume-icon"></i>
           </a>
         </div>
