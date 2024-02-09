@@ -1,0 +1,54 @@
+ .portfolio--container{
+  width: 750px;
+}
+.portfolio--container a{
+  text-decoration: none !important;
+
+}
+.swiper-slide{
+  height:auto !important;
+}
+.portfolio--card{
+  background: var(--container-color);
+  border: 1px solid var(--border-col);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: var(--mb-3);
+}
+.portfolio--card-img {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-col);
+  border-radius: 1.5rem;
+  margin-bottom: var(--mb-1);
+}
+.portfolio--card-title{
+  color: var(--title-color);
+  font-size: var(--h3-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+.portfolio--card-des{
+  color: var(--title-color);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.swiper-pagination-bullet{
+  background-color:var(--text-color) !important;
+}
+.swiper-pagination-bullet-active{
+  background-color:var(--title-color) !important;
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (max-width: 996px) {
+  .portfolio--container{
+    width: initial;
+  }
+  .portfolio--card{
+    padding: 1.25rem 1.5rem;
+  }
+}
