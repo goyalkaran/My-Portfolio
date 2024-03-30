@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="footer--social">
           <a
             className="footer--social-icon"
-            href={process.env.REACT_APP_INSTAGRAM_LINK}
+            href="https://www.instagram.com/karangoyal047/"
             target="_blank"
             rel="noreferrer"
           >
@@ -35,7 +35,7 @@ const Footer = () => {
           </a>
           <a
             className="footer--social-icon"
-            href={process.env.REACT_APP_LINKEDIN_LINK}
+            href="https://www.linkedin.com/in/karan-goyal-971198179/"
             target="_blank"
             rel="noreferrer"
           >
@@ -43,7 +43,7 @@ const Footer = () => {
           </a>
           <a
             className="footer--social-icon"
-            href={process.env.REACT_APP_DISCORD}
+            href="https://discordapp.com/users/606895497491382274"
             target="_blank"
             rel="noreferrer"
           >
