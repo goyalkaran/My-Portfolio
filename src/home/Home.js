@@ -9,19 +9,18 @@ import Footer from "../modules/footer/Footer.js";
 import Scroll from "../modules/scrollTop/Scroll.js";
 
 export const Home = () => {
-  return (
-    <>
-      <NavBar />
-
-      <div id="home">
-        <Intro />
-        <AboutMe />
-        <Skills />
-        <Portfolio />
-        <Contact />
-      </div>
-      <Footer />
-      <Scroll />
-    </>
-  );
+    return (
+        <>
+            <NavBar/>
+            <div id="home">
+                <Intro/>
+                <AboutMe/>
+                <Skills/>
+                <Portfolio/>
+                <Contact/>
+            </div>
+            <Footer/>
+            <Scroll/>
+        </>
+    );
 };
