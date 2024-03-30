@@ -29,6 +29,7 @@ const Footer = () => {
             className="footer--social-icon"
             href={process.env.REACT_APP_INSTAGRAM_LINK}
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-instagram"></i>
           </a>
@@ -36,6 +37,7 @@ const Footer = () => {
             className="footer--social-icon"
             href={process.env.REACT_APP_LINKEDIN_LINK}
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
@@ -43,6 +45,7 @@ const Footer = () => {
             className="footer--social-icon"
             href={process.env.REACT_APP_DISCORD}
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-discord"></i>
           </a>

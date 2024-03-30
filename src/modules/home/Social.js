@@ -6,28 +6,28 @@ const Social = () => {
       <a
         className="intro-social-icon"
         href={process.env.REACT_APP_INSTAGRAM_LINK}
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <i className="fa-brands fa-instagram fa-xl"></i>
       </a>
       <a
         className="intro-social-icon"
         href={process.env.REACT_APP_LINKEDIN_LINK}
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <i className="fa-brands fa-linkedin fa-xl"></i>
       </a>
       <a
         className="intro-social-icon"
         href={process.env.REACT_APP_GITHUB_LINK}
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <i className="fa-brands fa-github fa-xl"></i>
       </a>
       <a
         className="intro-social-icon"
         href={process.env.REACT_APP_MEDIUM_LINK}
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <i className="fa-brands fa-medium fa-xl"></i>
       </a>
