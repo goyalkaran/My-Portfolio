@@ -1,7 +1,6 @@
 import React from "react";
 
 const ProjectItems = ({ item }) => {
-  console.log(item.id);
   return (
     <div className="project--card" key={item.id}>
       <img src={item.image} alt="" className="project--img" />
